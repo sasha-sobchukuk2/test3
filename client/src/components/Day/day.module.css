@@ -1,0 +1,64 @@
+.root{
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBar{
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 35px;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: 'SF Pro Text';
+    font-weight: 600;
+
+
+
+}
+.iconContainer >img{
+    height: 10px;
+    margin: 0 2px;
+}
+.header{
+    height: 44px;
+    /*margin-bottom: 20px;*/
+    width: 100%;
+    display: flex;
+    position: relative;
+    font-family: 'Montserrat';
+}
+
+.tittle{
+
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+
+    color: #000000;
+    line-height: 44px;
+}
+.back{
+    display: block;
+    position: absolute;
+    top:15px;
+    left:30px;
+    width: 15px;
+    height: 15px;
+
+    border-left: 3px solid black;
+    border-top: 3px solid black;
+    transform: rotate(-45deg);
+}
+.month{
+    height: 26px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 24px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+}

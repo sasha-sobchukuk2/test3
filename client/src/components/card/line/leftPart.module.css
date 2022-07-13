@@ -1,0 +1,35 @@
+
+.container{
+    width: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.dot{
+    position: relative;
+    height: 10px;
+    width: 10px;
+    background-color: #617BE3;
+    border-radius: 50%;
+    z-index: 2;
+
+}
+
+
+.line{
+    height: calc(100% + 44px);
+    border-left:2px blue dashed;
+    position: absolute;
+    top: 50%;
+    z-index: 0;
+    overflow: hidden;
+    left: calc(50% - 1px);
+}
+
+.lastPosition{
+    /*border: rebeccapurple 2px solid;;*/
+    height: 0;
+    /*bottom:23px*/
+}

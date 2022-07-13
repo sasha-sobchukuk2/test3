@@ -1,0 +1,52 @@
+
+.root{
+    height: 56px;
+    margin-bottom: 44px;
+    display: flex;
+    position: relative;
+
+}
+
+
+.imgContainer{
+    width: 64px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.wrapper{
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+.img{
+    height: 100%;
+
+}
+.imgText{
+    font-family: 'Montserrat';
+    font-style: normal;
+    text-align: center;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+}
+.text{
+    background-color: pink;
+    flex-grow: 1;
+    padding: 14px 10px;
+
+    color: #000000;
+}
+
+.grad{
+    font-weight: 600;
+
+}
+.describe{
+    font-weight: 400;
+    line-height: 14px;
+    font-size: 12px;
+
+}
+

@@ -1,0 +1,21 @@
+.wrapper {
+    width: 375px;
+    height:812px ;
+    box-shadow: black .1px .1px 3px 1px;
+}
+
+.partContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.root{
+    margin-left: 24px;
+
+}
+
+
+
+
+
+

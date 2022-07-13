@@ -1,0 +1,16 @@
+{
+  "name": "weather_interview",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.4",
+    "nodemon": "^2.0.19"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "dev": "nodemon index.js",
+    "build": "cd client && npm install && npm run build"
+  }
+}
