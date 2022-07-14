@@ -20,10 +20,10 @@ const Details:FC = () => {
                     Today Details
                 </div>
                 <div className={classes.itemsWrapper}>
-                    <Detail name='Wind' data={details.wind+'E 8 kmh'} image={wing}/>
+                    <Detail name='Wind' data={`E ${details.wind} kmh`} image={wing}/>
                     <Detail name='Humidity' data={details.humidity+'%'} image={water}/>
                     <Detail name='UV Index' data={details.UVIndex.toString()} image={sun}/>
-                    <Detail name='Pressure' data={details.pressure+'1008 hPa'} image={arrow}/>
+                    <Detail name='Pressure' data={details.pressure+' hPa'} image={arrow}/>
 
                 </div>
             </>

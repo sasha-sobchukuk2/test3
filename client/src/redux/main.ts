@@ -146,7 +146,6 @@ export const getWeather = (reqData: getWeatherReq): ThunkType =>
 
         function getDetails(hourNow: CardName, cards: CardItem[]): Details|undefined {
             const card = cards.find(card => card.name === hourNow)
-
             if (card) {
                 const {name, middleTemperature, description, ...details} = card
 
