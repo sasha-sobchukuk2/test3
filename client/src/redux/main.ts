@@ -42,6 +42,7 @@ export type CardItem = Details & {
     description: string
     middleTemperature: number
     icon:IconNames
+    color:string
 
 }
 
@@ -64,7 +65,8 @@ const  makeCardPayload =(data: WeatherData[]): CardItem[]=> {
             UVIndex: 100 - Number(item.clouds),
             pressure: item.main.pressure,
             wind: item.wind.speed,
-            icon:item.weather[0].icon
+            icon:item.weather[0].icon,
+            color:'white'
         }
     })
 
@@ -72,6 +74,12 @@ const  makeCardPayload =(data: WeatherData[]): CardItem[]=> {
     cardItems[1].name = 'Afternoon'
     cardItems[2].name = 'Evening'
     cardItems[3].name = 'Night'
+
+    cardItems[0].color = 'pink'
+    cardItems[1].color = 'green'
+    cardItems[2].color = 'aqua'
+    cardItems[3].color = 'coral'
+
     return cardItems
 }
 
@@ -145,10 +153,7 @@ export const getWeather = (reqData: getWeatherReq): ThunkType =>
         const details: Details |undefined = getDetails(hourNow, cards)
 
         if (Number(data.cod) === 200) {
-            console.log(data)
-
             details && dispatch(actions.setDetails(details))
-
             dispatch(actions.setCardData(cards))
             dispatch(actions.setWeather(data.list))
             dispatch(actions.setCity(data.city))

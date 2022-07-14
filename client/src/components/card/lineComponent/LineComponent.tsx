@@ -1,13 +1,11 @@
-
-
 import React from 'react';
 import {CardName} from "../../../redux/main";
-import classes from './leftPart.module.css'
+import classes from './LineComponent.module.css'
 
 type LeftPartProps = {
     name: CardName
 }
-const LeftPart: React.FC<LeftPartProps> = ({name}) => {
+const LineComponent: React.FC<LeftPartProps> = ({name}) => {
     const lastPosition: boolean = name === "Night"
 
     return (
@@ -18,4 +16,4 @@ const LeftPart: React.FC<LeftPartProps> = ({name}) => {
     );
 };
 
-export default LeftPart;
+export default LineComponent;

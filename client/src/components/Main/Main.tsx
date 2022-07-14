@@ -3,10 +3,10 @@ import {useDispatch, useSelector} from "react-redux";
 import {AppStateType} from "../../redux/core";
 import {actions, CardItem, getWeather} from "../../redux/main";
 
-import classes from './main.module.css'
-import Day from "../Day/day";
-import Details from "../details/details";
-import Card from "../card/card";
+import classes from './Main.module.css'
+import Day from "../Day/Day";
+import Details from "../Details/Details";
+import Card from "../card/Card";
 
 const Main = () => {
 
@@ -27,12 +27,12 @@ const Main = () => {
         navigator
             .geolocation
             .getCurrentPosition(geolocationSuccess, errorCallback, {maximumAge: 6000000})
-    }, [])
+    }, [dispatch])
 
 
     return (
         <div className={classes.wrapper}>
-            <div className={classes.root}>
+            <div  className={classes.root}>
                 <Day/>
                 <div className={classes.partContainer}>
                     {cards?.map((cardData:CardItem)=><Card cardData={cardData} />)}

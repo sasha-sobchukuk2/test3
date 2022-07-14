@@ -20,7 +20,7 @@ test('set coords test', () => {
     expect(newState.coords?.latitude).toBe(myNumber)
 })
 
-test('set details', () => {
+test('set Details', () => {
 
     const myNumber = Math.random()
     const newState = MainReducer(state,actions.setDetails(

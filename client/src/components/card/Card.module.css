@@ -24,29 +24,24 @@
 
 }
 .imgText{
-    font-family: 'Montserrat';
-    font-style: normal;
-    text-align: center;
-    color: #000000;
     text-align: center;
     width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-style: normal;
 }
 .text{
-    background-color: pink;
     flex-grow: 1;
     padding: 14px 10px;
-
-    color: #000000;
 }
 
-.grad{
+.temp{
     font-weight: 600;
-
 }
 .describe{
     font-weight: 400;
     line-height: 14px;
     font-size: 12px;
-
 }
 

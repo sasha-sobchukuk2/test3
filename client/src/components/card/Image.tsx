@@ -10,7 +10,7 @@ import n1 from "../../accets/wetherIcons/nightIcon/n1.png";
 import n2 from "../../accets/wetherIcons/nightIcon/n2.png";
 import n10 from "../../accets/wetherIcons/nightIcon/n10.png";
 import React, {FC, useMemo} from "react";
-import classes from "./card.module.css";
+import classes from "./Card.module.css";
 import {IconNames} from "../../redux/main";
 
 
@@ -47,7 +47,7 @@ const Image: FC<ImageProps> = ({iconName}) => {
     }, [iconName])
     return (
         <div className={classes.wrapper}>
-            <img className={classes.img} src={image || defaultImage} alt={'image'}/>
+            <img className={classes.img} src={image || defaultImage} alt='text'/>
         </div>
     )
 }

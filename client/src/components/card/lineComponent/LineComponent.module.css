@@ -11,7 +11,7 @@
     position: relative;
     height: 10px;
     width: 10px;
-    background-color: #617BE3;
+    background-color: blue;
     border-radius: 50%;
     z-index: 2;
 
@@ -29,7 +29,5 @@
 }
 
 .lastPosition{
-    /*border: rebeccapurple 2px solid;;*/
     height: 0;
-    /*bottom:23px*/
 }

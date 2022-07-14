@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 import {AppStateType} from "../../redux/core";
 
 import Detail from "./Detail";
-import classes from './details.module.css'
+import classes from './Details.module.css'
 import wing from '../../accets/details/wing.png'
 import sun from '../../accets/details/sun.png'
 import arrow from '../../accets/details/arrow.png'

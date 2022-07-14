@@ -1,6 +1,6 @@
-import React, {FC} from 'react';// @ts-ignore
-import classes from "./card.module.css"
-import LeftPart from "./line/leftPart";
+import React, {FC} from 'react';
+import classes from "./Card.module.css"
+import PhotoPart from "./lineComponent/LineComponent";
 import Image from "./Image";
 import {CardItem} from "../../redux/main";
 
@@ -12,7 +12,7 @@ const Card:FC<CardType> = ({cardData}) => {
 
     return (
         <div className={classes.root}>
-            <LeftPart  name={cardData.name}/>
+            <PhotoPart name={cardData.name}/>
 
             <div className={classes.imgContainer}>
                 <Image iconName={cardData.icon}/>
@@ -21,8 +21,8 @@ const Card:FC<CardType> = ({cardData}) => {
                 </div>
             </div>
 
-            <div className={classes.text}>
-                <span className={classes.grad}>{cardData.middleTemperature} &#176;</span><br/>
+            <div style={{backgroundColor:cardData.color}} className={classes.text}>
+                <span className={classes.temp}>{cardData.middleTemperature} &#176;</span><br/>
                 <span className={classes.describe}>{cardData.description}</span>
             </div>
 

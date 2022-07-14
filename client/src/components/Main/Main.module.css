@@ -7,11 +7,9 @@
 .partContainer{
     display: flex;
     flex-direction: column;
-
 }
 .root{
     margin-left: 24px;
-
 }
 
 

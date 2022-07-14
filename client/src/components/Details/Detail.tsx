@@ -1,6 +1,6 @@
 import React from 'react';
 import {DetailName} from "../../redux/main";
-import classes from './details.module.css'
+import classes from './Details.module.css'
 
 type ItemProp ={
     name:DetailName
