@@ -90,10 +90,10 @@ export const getTimeNow = (): CardName => {
     if (hour > 0 && hour <= 12) {
         return 'Morning'
     } else if (hour > 12 && hour <= 15) {
-        return 'Evening'
+        return "Afternoon"
     } else if (hour > 15 && hour <= 18) {
         return 'Evening'
-    } else if (hour >= 18) {
+    } else if (hour > 18) {
         return 'Night'
     } else return ''
 
