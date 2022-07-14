@@ -57,12 +57,13 @@ const getMiddleTemperature = (temp: number): number => {
 const  makeCardPayload =(data: WeatherData[]): CardItem[]=> {
     const cardArray = [data[0], data[1], data[2], data[3]]
     const cardItems: CardItem[] = cardArray.map((item) => {
+
         return {
             name: '',
             middleTemperature: getMiddleTemperature(item.main.temp),
             description: item.weather[0].description,
             humidity: item.main.humidity,
-            UVIndex: 100 - Number(item.clouds),
+            UVIndex: 100 - Number(item.clouds.all),
             pressure: item.main.pressure,
             wind: item.wind.speed,
             icon:item.weather[0].icon,
@@ -145,9 +146,10 @@ export const getWeather = (reqData: getWeatherReq): ThunkType =>
 
         function getDetails(hourNow: CardName, cards: CardItem[]): Details|undefined {
             const card = cards.find(card => card.name === hourNow)
-            debugger
+
             if (card) {
                 const {name, middleTemperature, description, ...details} = card
+
                 return details
             }
         }
