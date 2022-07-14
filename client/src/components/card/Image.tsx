@@ -1,17 +1,17 @@
+import React, {FC, useMemo} from "react";
+import classes from "./Card.module.css";
+import {IconNames} from "../../redux/main";
 import defaultImage from "../../accets/wetherIcons/default.png";
 import d1 from "../../accets/wetherIcons/dayIcons/d1.png";
 import d2 from "../../accets/wetherIcons/dayIcons/d2.png";
+
 import d3 from "../../accets/wetherIcons/dayIcons/d3.png";
 import d9 from "../../accets/wetherIcons/dayIcons/d9.png";
 import d11 from "../../accets/wetherIcons/dayIcons/d11.png";
-
 import d4 from "../../accets/wetherIcons/dayIcons/d4.png";
 import n1 from "../../accets/wetherIcons/nightIcon/n1.png";
 import n2 from "../../accets/wetherIcons/nightIcon/n2.png";
 import n10 from "../../accets/wetherIcons/nightIcon/n10.png";
-import React, {FC, useMemo} from "react";
-import classes from "./Card.module.css";
-import {IconNames} from "../../redux/main";
 
 
 type ImageProps = {
