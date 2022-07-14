@@ -1,5 +1,5 @@
 import MainReducer, {actions, CardItem, Coords, Details, InitMainState} from "./main";
-import {City, WeatherData} from "../api/api/apiTypes";
+import {City, WeatherData} from "../api/apiTypes";
 
 let state: InitMainState;
 

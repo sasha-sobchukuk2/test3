@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.less.css';
+import './App.css';
 import Main from "./components/Main/Main";
 
 function App() {
@@ -10,4 +10,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

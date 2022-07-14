@@ -1,5 +1,5 @@
-import {ApiWeatherResponse, City, WeatherData} from "../api/api/apiTypes";
-import {getWeatherApi, getWeatherReq} from "../api/api/api";
+import {ApiWeatherResponse, City, WeatherData} from "../api/apiTypes";
+import {getWeatherApi, getWeatherReq} from "../api/api";
 import {BaseThunkType, InferActionsTypes} from "./core";
 
 
@@ -86,13 +86,14 @@ const  makeCardPayload =(data: WeatherData[]): CardItem[]=> {
 export const getTimeNow = (): CardName => {
     const hour = new Date().getHours()
 
-    if (hour > 0 && hour < 12) {
+
+    if (hour > 0 && hour <= 12) {
         return 'Morning'
-    } else if (hour > 12 && hour < 15) {
+    } else if (hour > 12 && hour <= 15) {
         return 'Evening'
-    } else if (hour > 15 && hour < 18) {
+    } else if (hour > 15 && hour <= 18) {
         return 'Evening'
-    } else if (hour > 18) {
+    } else if (hour >= 18) {
         return 'Night'
     } else return ''
 
@@ -144,6 +145,7 @@ export const getWeather = (reqData: getWeatherReq): ThunkType =>
 
         function getDetails(hourNow: CardName, cards: CardItem[]): Details|undefined {
             const card = cards.find(card => card.name === hourNow)
+            debugger
             if (card) {
                 const {name, middleTemperature, description, ...details} = card
                 return details
@@ -153,6 +155,7 @@ export const getWeather = (reqData: getWeatherReq): ThunkType =>
         const details: Details |undefined = getDetails(hourNow, cards)
 
         if (Number(data.cod) === 200) {
+
             details && dispatch(actions.setDetails(details))
             dispatch(actions.setCardData(cards))
             dispatch(actions.setWeather(data.list))

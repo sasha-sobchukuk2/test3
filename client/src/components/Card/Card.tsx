@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import classes from "./Card.module.css"
-import PhotoPart from "./lineComponent/LineComponent";
+import PhotoPart from "./LineComponent/LineComponent";
 import Image from "./Image";
 import {CardItem} from "../../redux/main";
 

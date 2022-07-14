@@ -1,8 +1,8 @@
 import React from 'react';
 import classes from './Day.module.css'
-import Cellular from '../../accets/icons/Cellular Connection.png'
-import Wifi from '../../accets/icons/Wifi.png'
-import Battery from '../../accets/icons/Battery.png'
+import Cellular from '../../assets/icons/Cellular Connection.png'
+import Wifi from '../../assets/icons/Wifi.png'
+import Battery from '../../assets/icons/Battery.png'
 
 const Day = () => {
 

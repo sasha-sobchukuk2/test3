@@ -6,7 +6,7 @@ import {actions, CardItem, getWeather} from "../../redux/main";
 import classes from './Main.module.css'
 import Day from "../Day/Day";
 import Details from "../Details/Details";
-import Card from "../card/Card";
+import Card from "../Card/Card";
 
 const Main = () => {
 
@@ -35,7 +35,7 @@ const Main = () => {
             <div  className={classes.root}>
                 <Day/>
                 <div className={classes.partContainer}>
-                    {cards?.map((cardData:CardItem)=><Card cardData={cardData} />)}
+                    {cards?.map((cardData:CardItem)=><Card key={cardData.name} cardData={cardData} />)}
                 </div>
                 <Details/>
             </div>

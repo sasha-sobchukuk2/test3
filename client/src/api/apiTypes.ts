@@ -1,4 +1,4 @@
-import {IconNames} from "../../redux/main";
+import {IconNames} from "../redux/main";
 
 export type City = {
     id:number,

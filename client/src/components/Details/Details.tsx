@@ -4,10 +4,10 @@ import {AppStateType} from "../../redux/core";
 
 import Detail from "./Detail";
 import classes from './Details.module.css'
-import wing from '../../accets/details/wing.png'
-import sun from '../../accets/details/sun.png'
-import arrow from '../../accets/details/arrow.png'
-import water from '../../accets/details/water.png'
+import wing from '../../assets/details/wing.png'
+import sun from '../../assets/details/sun.png'
+import arrow from '../../assets/details/arrow.png'
+import water from '../../assets/details/water.png'
 
 const Details:FC = () => {
     const details = useSelector((state: AppStateType) => state.Main.details)
